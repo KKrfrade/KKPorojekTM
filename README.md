@@ -1,2 +1,2 @@
-# Tu Tego 
-ptp
+# Projekt - TM
+Kostka Led - Arduino
