@@ -23,7 +23,7 @@ https://www.amazon.pl/s?k=arduino+starter+kit+uno&language=pl_PL&adgrpid=1205423
 
 # Schemat w programie Fritzing:
 
-![img](./Projekt/schemat1.jpg)
+![img](./Program/schemat1.jpg)
 
 # Kod programu:
 
