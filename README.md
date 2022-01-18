@@ -44,18 +44,18 @@ pinMode(7,OUTPUT);
 //PRZYCISK
 pinMode(12,INPUT);
 }
-int oczka=0;
-int przeskok=0;
+int oczka=0; //zmienna, która będzie przechowywała liczbę wylosowanych oczek
+int przeskok=0; //zmienna, która będzie określała liczbę przejść przed pokazaniem właściwego wyniku
 void loop() {
-randomSeed(millis());
-if(digitalRead(12)==HIGH){
+randomSeed(millis()); //Zwraca liczbę milisekund, które upłynęły od momentu rozpoczęcia wykonywania programu
+if(digitalRead(12)==HIGH){ //losujemy liczbę przejść 
   delay(20);
 przeskok=random(3,15);
   while(digitalRead(12)==HIGH);
 delay(20);
 }
-int czas=50;
-for(int i=1; i<=przeskok; i++){
+int czas=50; // czas przerwy między pierwszym, a drugim wynikiem w trakcie losowania
+for(int i=1; i<=przeskok; i++){ //pętla, która wykonuje się tyle razy, ile jest przejść
 digitalWrite(1,LOW);
   digitalWrite(2,LOW);
 digitalWrite(3,LOW);
@@ -63,7 +63,7 @@ digitalWrite(3,LOW);
 digitalWrite(5,LOW);
   digitalWrite(6,LOW);
 digitalWrite(7,LOW);
-  oczka=random(1,7);
+  oczka=random(1,7); //losowanie liczby oczek
 switch (oczka){
   case 1:
 digitalWrite(4,HIGH);
@@ -102,9 +102,9 @@ default:
   break;
 }
   delay(czas);
-czas+=40;
+czas+=60; spowolnienie przejścia kostki
 }
-while(digitalRead(12)==LOW);
+while(digitalRead(12)==LOW); //ponowne wciśnięcie przycisku
 }
 ```
 # Filmik z działania programu 
