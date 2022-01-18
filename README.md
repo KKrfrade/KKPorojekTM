@@ -1,20 +1,20 @@
+# Krystian Koszarski
+ 
 # Projekt - TM
-
-# hardwire
 
 # Arduino - kostka do losowania
 
-Podczas używania arudunio oraz siedmiu diód można skonstruwać kostkę, która będzie losować liczby.
+Arduino złożone z siedmiu diód, rezystorów oraz przycisku ma za zadanie zastąpić tradycyjną kostkę do gry.
 
 # Elementy:
 
-Arduino UNO R3\n
-7 x LED\n
-Rezystor 10kΩ\n
-7 x 240Ω\n
-przycisk\n
-Płytka PCB\n
-Przewody\n
+- Arduino UNO R3
+- 7 x LED
+- Rezystor 10kΩ
+- 7 x 240Ω
+- przycisk
+- Płytka PCB
+- Przewody
 
 # Link do elementów
 
@@ -24,6 +24,10 @@ https://www.amazon.pl/s?k=arduino+starter+kit+uno&language=pl_PL&adgrpid=1205423
 # Schemat w programie Fritzing:
 
 ![img](./Program/schemat1.jpg)
+
+# Wygląd złożonego schematu
+
+![img](./Program/fiz.jpg)
 
 # Kod programu:
 
@@ -103,3 +107,5 @@ czas+=40;
 while(digitalRead(12)==LOW);
 }
 ```
+# Filmik z działania programu 
+https://youtube.com/watch?v=6hHI3PZTbhA&feature=share
