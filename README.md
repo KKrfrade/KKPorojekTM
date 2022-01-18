@@ -22,9 +22,12 @@ https://www.amazon.pl/s?k=arduino+starter+kit+uno&language=pl_PL&adgrpid=1205423
 
 
 # Schemat w programie Fritzing:
-<img src="Projekt/schemat1.jpg"/>
+
+![img](./Projekt/schemat1.jpg)
+
 # Kod programu:
-```
+
+```cpp
 void setup() {
 //DIODY LED
 pinMode(1,OUTPUT);
